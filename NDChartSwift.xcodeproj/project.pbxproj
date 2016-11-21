@@ -14,7 +14,6 @@
 		9B5C547C1DDD603A003364CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5C547A1DDD603A003364CB /* LaunchScreen.storyboard */; };
 		9B5C54841DDD6057003364CB /* NDChartGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C54831DDD6057003364CB /* NDChartGraphView.swift */; };
 		9B5C54861DDD6068003364CB /* NDChartGraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C54851DDD6068003364CB /* NDChartGraphPoint.swift */; };
-		9BC7FC2E1DDF07A400DA4B62 /* TurtleBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7FC2D1DDF07A400DA4B62 /* TurtleBezierPath.m */; };
 		9BC7FC321DE2849600DA4B62 /* UIBezierPath+LxThroughPointsBezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7FC311DE2849600DA4B62 /* UIBezierPath+LxThroughPointsBezier.swift */; };
 		9BC7FC341DE2976600DA4B62 /* ChartGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC7FC331DE2976600DA4B62 /* ChartGraphView.swift */; };
 /* End PBXBuildFile section */
@@ -29,9 +28,6 @@
 		9B5C547D1DDD603A003364CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B5C54831DDD6057003364CB /* NDChartGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDChartGraphView.swift; sourceTree = "<group>"; };
 		9B5C54851DDD6068003364CB /* NDChartGraphPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDChartGraphPoint.swift; sourceTree = "<group>"; };
-		9BC7FC2B1DDF07A400DA4B62 /* NDChartSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NDChartSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		9BC7FC2C1DDF07A400DA4B62 /* TurtleBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurtleBezierPath.h; sourceTree = "<group>"; };
-		9BC7FC2D1DDF07A400DA4B62 /* TurtleBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurtleBezierPath.m; sourceTree = "<group>"; };
 		9BC7FC311DE2849600DA4B62 /* UIBezierPath+LxThroughPointsBezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+LxThroughPointsBezier.swift"; sourceTree = "<group>"; };
 		9BC7FC331DE2976600DA4B62 /* ChartGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartGraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +62,6 @@
 		9B5C54701DDD603A003364CB /* NDChartSwift */ = {
 			isa = PBXGroup;
 			children = (
-				9BC7FC2C1DDF07A400DA4B62 /* TurtleBezierPath.h */,
-				9BC7FC2D1DDF07A400DA4B62 /* TurtleBezierPath.m */,
 				9B5C54711DDD603A003364CB /* AppDelegate.swift */,
 				9B5C54731DDD603A003364CB /* ViewController.swift */,
 				9BC7FC331DE2976600DA4B62 /* ChartGraphView.swift */,
@@ -78,7 +72,6 @@
 				9B5C54781DDD603A003364CB /* Assets.xcassets */,
 				9B5C547A1DDD603A003364CB /* LaunchScreen.storyboard */,
 				9B5C547D1DDD603A003364CB /* Info.plist */,
-				9BC7FC2B1DDF07A400DA4B62 /* NDChartSwift-Bridging-Header.h */,
 			);
 			path = NDChartSwift;
 			sourceTree = "<group>";
@@ -163,7 +156,6 @@
 				9BC7FC321DE2849600DA4B62 /* UIBezierPath+LxThroughPointsBezier.swift in Sources */,
 				9BC7FC341DE2976600DA4B62 /* ChartGraphView.swift in Sources */,
 				9B5C54721DDD603A003364CB /* AppDelegate.swift in Sources */,
-				9BC7FC2E1DDF07A400DA4B62 /* TurtleBezierPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +282,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neuneed.NDChartSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NDChartSwift/NDChartSwift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -306,7 +297,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = neuneed.NDChartSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "NDChartSwift/NDChartSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
