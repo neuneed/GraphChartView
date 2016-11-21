@@ -33,8 +33,8 @@ class ViewController: UIViewController {
         
         let graphView = NDChartGraphView.init(frame: graphBGView.bounds)
         
-        graphView.graphData = [20,16,14,20,10,39,22,11,56,33,11,22,33,15,66]
-        
+        graphView.graphData = [20,16,14,20,10, 39,22,11,56,33, 11,22,33,15,66]
+        graphView.graphDataLabels = ["aaa","bbb","ccc","ddd","eee","fff","ggg","hhh","iii","jjj","kkk","lll","mmm","nnn","ooo",]
         
         graphView.pointFillColor = UIColor.red
         graphView.strokeColor = UIColor.green
@@ -64,11 +64,11 @@ class ViewController: UIViewController {
         self.view.addSubview(graphBGView)
         
         let graphView = ChartGraphView.init(frame: graphBGView.bounds)
-        graphView.highestData = [20,16,14,20,66, 39,22,11,56,33, 11,22,33,15,28]
-        graphView.lowestData = [10,12,6,5,-7, 9,20,8,33,21, 9,6,8,13,20]
+        graphView.highestData = [20,16,14,20,40, 39,22,11,34,33, 11,22,33,15,28]
+        graphView.lowestData = [10,12,6,5,-1, 9,20,8,-5,21, 9,6,8,13,20]
         
-        graphView.highPointFillColor = UIColor.orange
-        graphView.highLineColor = UIColor.orange
+        graphView.highPointFillColor = UIColor.green
+        graphView.highLineColor = UIColor.green
         
         graphView.lowPointFillColor = UIColor.yellow
         graphView.lowLineColor = UIColor.yellow

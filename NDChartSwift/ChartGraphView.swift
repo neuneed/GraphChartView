@@ -145,7 +145,7 @@ class ChartGraphView: UIScrollView {
             }
             
             let offSetFromTop :CGFloat! = 10.0 + 20.0
-            let offsetFromBottom :CGFloat! = 10.0 + 20.0
+            let offsetFromBottom :CGFloat! = 5.0 + 20.0
             
             let screenHeight :CGFloat = (self.frame.height - CGFloat(offsets)) / (self.frame.height + offSetFromTop + offsetFromBottom)
             
@@ -261,7 +261,7 @@ class ChartGraphView: UIScrollView {
         {
             tempLabel.center = CGPoint(x: point.x, y: point.y - CGFloat(labelOffsetFromPointCenter))
         }
-        
+//        tempLabel.backgroundColor = UIColor.red
         tempLabel.text = text as String
     }
     

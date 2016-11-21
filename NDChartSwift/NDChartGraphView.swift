@@ -24,8 +24,8 @@ class NDChartGraphView: UIScrollView {
     open var graphData : NSArray = NSArray()
 
     // Labels to match graphData points
-//    open var graphDataLabels : NSArray = NSArray()
-    
+    open var graphDataLabels : NSArray = NSArray()
+
     
 
     // Colour of the graph line
@@ -131,8 +131,7 @@ class NDChartGraphView: UIScrollView {
             
             let xCoord = Int(Float(graphWidth) / Float(graphData.count) * Float(counter))
             
-//            var offsets = kPointLabelHeight + kPointLabelOffsetFromPointCenter
-            var offsets = 0
+            var offsets = kPointLabelHeight + kPointLabelOffsetFromPointCenter
             if hideLabels == false
             {
                 offsets += kBarLabelHeight
@@ -218,7 +217,7 @@ class NDChartGraphView: UIScrollView {
         label.minimumScaleFactor = 0.6
         label.font = labelXFont
         label.numberOfLines = 2
-//        label.text = graphDataLabels[indexNumber] as? String
+        label.text = graphDataLabels[indexNumber] as? String
         graphView.addSubview(label)
         label.center = CGPoint.init(x: point.x, y: 16.0)
     }
