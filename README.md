@@ -1,7 +1,8 @@
 # GraphChartView
-Curved chartView useage swift3.0.
+Curved chartView by swift3.0.
 
-
+## More
+Need to add animation control(show/hidden).
 
 
 ## Thanks to 
